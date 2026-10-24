@@ -399,6 +399,25 @@ h2 {
   padding-top: 14px;
 }
 
+/* PayPal */
+.btn-paypal {
+  margin-top: 6px;
+  background: #ffc439;
+  color: #1b1b1b;
+  box-shadow: 0 10px 28px -14px #ffc439;
+}
+.btn-paypal:hover {
+  background: #ffd36b;
+}
+.btn-paypal svg {
+  color: #003087;
+}
+.paypal-hint {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+
 /* Story */
 .story {
   display: flex;
