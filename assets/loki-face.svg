@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-385 -440 770 740">
+  <title>Loki</title>
+  <!--
+    Loki: black brindle French bulldog with a white blaze and muzzle.
+    Single source for the in-app logo and for the app icon (scripts/build-icons.mjs).
+  -->
+  <defs>
+    <linearGradient id="loki-fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b221c"/>
+      <stop offset="1" stop-color="#16120f"/>
+    </linearGradient>
+    <linearGradient id="loki-white" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7f1"/>
+      <stop offset="1" stop-color="#e9e1d6"/>
+    </linearGradient>
+    <clipPath id="loki-ears">
+      <path d="M-300 -10 C-372 -150 -372 -300 -318 -372 C-280 -420 -205 -405 -160 -340 C-120 -282 -95 -210 -85 -150 Z"/>
+      <path d="M300 -10 C372 -150 372 -300 318 -372 C280 -420 205 -405 160 -340 C120 -282 95 -210 85 -150 Z"/>
+    </clipPath>
+    <clipPath id="loki-head">
+      <path d="M-325 40 C-325 -115 -190 -175 0 -175 C190 -175 325 -115 325 40 C325 185 225 285 0 285 C-225 285 -325 185 -325 40 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- ears (behind the head), warm outline so the dark coat reads on dark backgrounds -->
+  <g stroke="#6b5240" stroke-width="12" stroke-linejoin="round" fill="url(#loki-fur)">
+    <path d="M-300 -10 C-372 -150 -372 -300 -318 -372 C-280 -420 -205 -405 -160 -340 C-120 -282 -95 -210 -85 -150 Z"/>
+    <path d="M300 -10 C372 -150 372 -300 318 -372 C280 -420 205 -405 160 -340 C120 -282 95 -210 85 -150 Z"/>
+  </g>
+  <g clip-path="url(#loki-ears)" stroke="#47362a" stroke-linecap="round" fill="none" opacity="0.75">
+    <path d="M-345 -250 C-330 -210 -345 -170 -322 -120" stroke-width="10"/>
+    <path d="M345 -250 C330 -210 345 -170 322 -120" stroke-width="10"/>
+  </g>
+  <path d="M-268 -70 C-315 -170 -318 -280 -285 -330 C-258 -365 -212 -352 -185 -305 C-158 -258 -140 -205 -132 -160 Z" fill="#e9889c" opacity="0.85"/>
+  <path d="M268 -70 C315 -170 318 -280 285 -330 C258 -365 212 -352 185 -305 C158 -258 140 -205 132 -160 Z" fill="#e9889c" opacity="0.85"/>
+
+  <!-- head -->
+  <path d="M-325 40 C-325 -115 -190 -175 0 -175 C190 -175 325 -115 325 40 C325 185 225 285 0 285 C-225 285 -325 185 -325 40 Z" fill="url(#loki-fur)" stroke="#6b5240" stroke-width="12"/>
+
+  <!-- brindle: short, broken, slightly slanted streaks -->
+  <g clip-path="url(#loki-head)" stroke="#45342a" stroke-linecap="round" fill="none" opacity="0.8">
+    <path d="M-300 -40 C-292 -10 -298 15 -288 40" stroke-width="11"/>
+    <path d="M-270 60 C-262 95 -270 120 -258 150" stroke-width="13"/>
+    <path d="M-245 -95 C-238 -65 -244 -45 -236 -20" stroke-width="9"/>
+    <path d="M-225 100 C-218 130 -224 150 -214 175" stroke-width="10"/>
+    <path d="M-205 190 C-196 212 -200 228 -190 245" stroke-width="9"/>
+    <path d="M-195 -135 C-188 -112 -192 -96 -186 -78" stroke-width="8"/>
+    <path d="M-285 120 C-280 140 -284 152 -277 168" stroke-width="8"/>
+    <path d="M300 -40 C292 -10 298 15 288 40" stroke-width="11"/>
+    <path d="M270 60 C262 95 270 120 258 150" stroke-width="13"/>
+    <path d="M245 -95 C238 -65 244 -45 236 -20" stroke-width="9"/>
+    <path d="M225 100 C218 130 224 150 214 175" stroke-width="10"/>
+    <path d="M205 190 C196 212 200 228 190 245" stroke-width="9"/>
+    <path d="M195 -135 C188 -112 192 -96 186 -78" stroke-width="8"/>
+    <path d="M285 120 C280 140 284 152 277 168" stroke-width="8"/>
+  </g>
+
+  <!-- white blaze running down the forehead and opening into the muzzle -->
+  <path d="M-24 -172 C-28 -110 -45 -40 -88 20 C-150 50 -195 110 -182 172 C-165 240 -90 282 0 284 C90 282 165 240 182 172 C195 110 150 50 88 20 C45 -40 28 -110 24 -172 Z" fill="url(#loki-white)"/>
+
+  <!-- wrinkles on the dark forehead -->
+  <path d="M-150 -118 C-120 -132 -85 -132 -60 -122" stroke="#5c4535" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <path d="M150 -118 C120 -132 85 -132 60 -122" stroke="#5c4535" stroke-width="13" stroke-linecap="round" fill="none"/>
+
+  <!-- eyes with a warm rim so they read on black fur -->
+  <circle cx="-140" cy="-10" r="50" fill="#5c4535"/>
+  <circle cx="140" cy="-10" r="50" fill="#5c4535"/>
+  <circle cx="-140" cy="-10" r="42" fill="#0b0908"/>
+  <circle cx="140" cy="-10" r="42" fill="#0b0908"/>
+  <circle cx="-124" cy="-26" r="14" fill="#fbf7f1"/>
+  <circle cx="156" cy="-26" r="14" fill="#fbf7f1"/>
+
+  <!-- flat black nose on the white muzzle -->
+  <path d="M-82 72 C-82 42 82 42 82 72 C82 104 32 120 0 120 C-32 120 -82 104 -82 72 Z" fill="#0b0908"/>
+  <ellipse cx="-28" cy="64" rx="19" ry="8" fill="#5a4a3d"/>
+
+  <!-- mouth and a bit of tongue -->
+  <path d="M-30 204 C-30 246 30 246 30 204 Z" fill="#f28aa0"/>
+  <path d="M0 120 L0 168 M0 168 C-30 204 -82 206 -108 184 M0 168 C30 204 82 206 108 184" stroke="#0b0908" stroke-width="14" stroke-linecap="round" fill="none"/>
+</svg>
